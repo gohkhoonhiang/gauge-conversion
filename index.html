@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css"/>
+	<link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Gauge Conversion Calculator</h1>
+        <p>As a beginner knitter, I don't have a lot of resources. Often I find interesting projects and get excited to start knitting, only to realise I don't have the necessary yarns and needles. At the same time, I don't have so much financial resources which allow me to purchase those yarns and needles used by the projects. The solution is to adapt my own stash to the projects. And so I work out the formula to convert the gauge I need to use with my own tools. Here's a simple conversion tool. Hope it's useful for you too.</p>
+        <p class="signature">-- Khoon Hiang</p>
+    </div>
+    <div class="content">
+        <div class="steps" id="step1">
+            <div class="summary">Step 1<span class="step-summary">Enter gauge</span></div>
+            <div class="description">Enter the gauge of the project instruction and the gauge of your own yarn.</div>
+        </div>
+        <div class="step-instruction">
+			<div class="left-box" id="pattern-gauge">
+				<h2>Project</h2>
+				<p>Gauge: <input id="pattern-gauge-sts-txt" type="text" placeholder="sts"> by <input id="pattern-gauge-row-txt" type="text" placeholder="row"> per inch</p>
+			</div>
+			<div class="right-box" id="own-gauge">
+				<h2>Yours</h2>
+				<p>Gauge: <input id="own-gauge-sts-txt" type="text" placeholder="sts"> by <input id="own-gauge-row-txt" type="text" placeholder="row"> per inch</p>
+			</div>
+		</div>
+        <div class="steps" id="step2">
+            <div class="summary">Step 2<span class="step-summary">Enter required sts</span></div>
+            <div class="description">Enter the required number of stitches in the project instruction. For example, if the instruction says to CO 30 sts in multiples of 4 plus 2 sts, then enter 30 in the "sts" box, 4 in the "multiples" box and 2 in the "additional" box. If the number of sts required is exactly in multiples of "multiples", then leave the "additional" box empty.</div>
+        </div>
+        <div class="step-instruction">
+			<div class="single-box" id="pattern-sts">
+				<h2>Project</h2>
+				<p>Required sts: <input id="pattern-required-sts-txt" type="text" placeholder="sts"> in multiples of <input id="pattern-required-mult-txt" type="text" placeholder="multiples"> plus <input id="pattern-required-add-txt" type="text" placeholder="additional"> sts</p>
+			</div>
+        </div>
+        <div class="steps" id="step3">
+            <div class="summary">Step 3<span class="step-summary">Convert!</span></div>
+            <div class="description">Hit the "Convert" button! Use the calculated sts for your own yarn.</div>
+        </div>
+        <div class="step-instruction">
+			<div class="single-box" id="own-sts">
+        		<div class="button" id="convert-btn">Convert!</div>
+				<h2>Yours</h2>
+				<p>Required sts: <input id="own-required-sts-txt" type="text" placeholder="sts" disabled> in multiples of <input id="own-required-mult-txt" type="text" placeholder="multiples" disabled> plus <input id="own-required-add-txt" type="text" placeholder="additional" disabled> sts</p>
+			</div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Sorry for the lack of validation! Please enter all fields (except "addtional") and only numeric values into the textbox so as not to cause errors.</p>
+        <p>Original formula found <a href="http://www.annbuddknits.com/My_Favorite_Formula_v020310.pdf" target="_blank">here</a></p>
+    </div>
+</body>
+</html>
