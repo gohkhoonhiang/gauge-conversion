@@ -1,0 +1,91 @@
+.header {
+    padding: 10px;
+    background-color: #eee;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    line-height: 2em;
+}
+
+.signature {
+	font-family: cursive;
+	text-align: right;
+}
+
+.content {
+	padding: 40px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.content input[type="text"] {
+    padding: 10px;
+}
+
+.content .steps {
+	clear: both;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.content .steps .summary {
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.content .steps .summary .step-summary {
+	float: right;
+}
+
+.content .steps .description {
+	padding-top: 5px;
+}
+
+.content .step-instruction {
+	margin: 10px 0px 30px 0px;
+}
+
+.content .step-instruction .left-box {
+    float: left;
+    margin: 10px 0px 30px 100px;
+    width: 500px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.content .step-instruction .right-box {
+    float: right;
+    margin: 10px 100px 30px 0px;
+    width: 500px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.content .step-instruction .single-box {
+    margin: 10px 0px 30px 100px;
+    padding: 20px;
+    width: 800px;
+    border: 1px solid #eee;
+}
+
+.content .button {
+	padding: 15px;
+	width: 100px;
+	border-radius: 5px;
+	background-color: #ccc;
+	color: #333;
+	text-align: center;
+}
+
+.content .button-hover {
+	background-color: #333;
+	color: #ccc;
+	cursor: pointer;
+}
+
+.footer {
+	position: relative;
+    margin-top: 50px;
+    padding: 10px;
+    border-top: 1px solid black;
+    font-family: 'Poiret One', cursive;
+}
